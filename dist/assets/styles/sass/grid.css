@@ -1,0 +1,37 @@
+.grid {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap; }
+
+.grid .c2 {
+  width: 16.66667%; }
+  @media only screen and (min-width: 768px) {
+    .grid .c2 {
+      width: 18.66667%; } }
+  @media only screen and (min-width: 600px) {
+    .grid .c2 {
+      width: 20.66667%; } }
+  @media only screen and (min-width: 992px) {
+    .grid .c2 {
+      width: 21.66667%; } }
+
+.grid .c3 {
+  width: 25%; }
+  @media only screen and (min-width: 768px) {
+    .grid .c3 {
+      width: 27%; } }
+  @media only screen and (min-width: 600px) {
+    .grid .c3 {
+      width: 29%; } }
+  @media only screen and (min-width: 992px) {
+    .grid .c3 {
+      width: 30%; } }
+
+.grid .c6 {
+  width: 50%; }
+
+.grid .c8 {
+  width: 66.66667%; }
+
+.grid .c12 {
+  width: 100%; }

@@ -1,0 +1,31 @@
+@import 'mixins';
+$base: 12;
+$col-sizes:2,3,6,8,12;
+
+@function getWidth($cols){
+    @return $cols / $base * 100%; 
+}
+
+.grid{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+@each $size in $col-sizes{
+.grid .c#{$size}{
+    width: getWidth($size);
+    @if $size<5 {
+        @include tablet{
+            width: getWidth($size) + 2; 
+        }
+        @include small{
+            width: getWidth($size) + 4 ; 
+        }
+        @include desktop{
+            width: getWidth($size) + 5 ; 
+        }
+    }
+}
+
+}
