@@ -35,6 +35,5 @@ function getInputValue(){
         const templateSource = document.getElementById('news-template')
         templateSource.style.display = "none";
         return;}
-    // Displaying the value
 }
 

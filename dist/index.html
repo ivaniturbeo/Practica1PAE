@@ -14,8 +14,10 @@
     <div class="grid">
         <div class="c3"></div>
         <div class="c6">
-            <input type="text" id="myInput" placeholder="Busca un tema..">
-            <button type="submit"  onclick="getInputValue()" ><i class="fa fa-search"></i></button>
+            <form action="/news" method="GET">
+                <input type="text" id="myInput" placeholder="Busca un tema..">
+                <button type="submit"  onclick="getInputValue()" ><i class="fa fa-search"></i></button>
+            </form>
         </div>
         <div class="c3"></div>
     </div>
@@ -29,6 +31,6 @@
                 </div>
         {{/each}}
     </div>
-<script src="/assets/scripts/main.js"></script>    
+<script src="/assets/scripts/news.js"></script>    
 </body>
 </html>
