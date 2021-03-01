@@ -6,10 +6,11 @@ const buildpath = 'dist';
 
 gulp.task('html',function(){
     return gulp.src('src/index.html')
-        .pipe(gulp.dest(buildpath));
+        .pipe(gulp.dest(buildpath + '/views'));
 });
 gulp.task('watch:html', gulp.series('html',function(done){
     gulp.watch('src/**/*.html', gulp.series('html'));
+    
     done();
 }));
 gulp.task('styles', function(){

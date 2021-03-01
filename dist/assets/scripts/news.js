@@ -9,7 +9,7 @@ router.route('/')
         if(search){
             const fetch = require('node-fetch');
             fetch( 'http://newsapi.org/v2/everything?' +
-            'q=' + topic + '&' +
+            'q=' + search + '&' +
             'from=2021-02-13&' +
             'sortBy=popularity&' +
             'apiKey=6bdb05031ff149c0b5bd95e37112a80a')
