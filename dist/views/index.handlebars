@@ -1,0 +1,20 @@
+<h1>News Search!</h1>
+    <div class="grid">
+        <div class="c3"></div>
+        <div class="c6">
+            <input type="text" id="myInput" placeholder="Busca un tema..">
+            <button type="submit"  onclick="getInputValue()" ><i class="fa fa-search"></i></button>
+        </div>
+        <div class="c3"></div>
+    </div>
+    <div id="news-template" class="grid hidden">
+        {{#each news}}
+                <div class="news-item c2">
+                    <img src="{{urlToImage}}" />
+                    <h2>{{title}}</h2>
+                    <p>{{description}}</p>
+                    <a href="{{url}}" target="_blank">Ver más</a>
+                </div>
+        {{/each}}
+    </div>
+<script src="/public/scripts/main.js"></script>    
